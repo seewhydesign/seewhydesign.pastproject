@@ -1,0 +1,251 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F8F6F3;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 12px;  /* was 14 */
+  line-height: 160%;
+  color: #8991A2;
+}
+
+
+
+.container {
+  margin: 0 auto;
+  width: 375px;
+}
+
+.ios_essentials {
+  background-color: #343C4F;
+  padding: 3px 0 0 6px;
+}
+
+.nav {
+  background-color: #343C4F;
+  padding: 11px 0 0 9px;
+  font-size: 1.3em;
+  color: #fff;
+  display: flex;
+  /* align-items: center; */
+  /* columns: 3; */
+  /* height: 55px; */
+}
+
+/* .nav h1 {
+  text-align: center;
+  color: #FFF;
+  font-size: 1.7em;
+}  */
+
+img {
+  padding-right: 6px;
+}
+
+.go_back {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 35px;
+  color: #8991A2;
+}
+
+.back_title {
+}
+
+.page_on {
+}
+
+
+
+.main_title {
+  background-color: #343C4F;
+  padding: 40px 16px 16px 16px;
+  /* height: 67px; */
+}
+
+
+
+
+.column_title {
+  background-color: #B4BBCB;
+  padding: 4px 0 0 16px;
+  display: flex;
+  justify-content: space-between;
+  height: 27px;
+  color: #343D4E;
+  font-weight: 500;
+}
+
+.column_title_oos {
+  margin-top: 8px;
+  text-transform: uppercase;
+  background-color: #B4BBCB;
+  padding: 4px 0 0 16px;
+  display: flex;
+  justify-content: space-between;
+  height: 27px;
+  color: #343D4E;
+  font-weight: 500;
+}
+
+.bus_times {
+  display: flex;
+  padding-right: 16px;
+  justify-content: flex-end;
+}
+
+.next {
+  margin-left: 17px;
+}
+
+
+
+
+
+.route_now {
+  background-image: url("/images/orange_moving_bus.png");
+
+}
+
+.route {
+  background-image: url("/images/blue_moving_bus.png");
+}
+
+.reroute {
+  background-image: url("/images/reroute_orange_moving_bus.png");
+  /* margin-top: 7px; */
+  padding-top: 11px;
+}
+
+.oos {
+  background-color: rgba(180, 187, 203, .4);
+  border-top: 1px solid;
+}
+
+
+.route_oos {
+  background-image: url("/images/blue_moving_bus.png");
+}
+
+.route, .route_now, .reroute, .route_oos {
+  border-bottom: 1px solid rgba(180, 187, 203, 40);
+  height: 56px;  /* was 44 */
+  background-repeat: no-repeat;
+  padding-right: 16px;
+  display: flex;
+  background-origin: content-box;
+
+  /* justify-content: center; */
+}
+
+.route, .route_now, .route_oos {
+  /* margin-top: 11px; */
+  padding-top: 11px;
+}
+
+.route:hover, .route_now:hover, .reroute:hover {
+  background-color: #ece5db;
+}
+
+.route_oos:hover {
+  background-color: rgba(180, 187, 203, .8);
+}
+
+
+.left_info {
+  display: flex;
+  align-items: flex-start;
+  flex: 2.5;
+}
+
+.line {
+  /* width: 20%;
+  display: inline-block; */
+  flex: 0.5;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #fff;
+  text-align: right;
+  padding-right: 22px;
+  padding-top: 7px;
+
+  /* height: 32px; */
+}
+
+.destination {
+  /* display: inline-block;
+  width: 50%; */
+  flex: 2;
+  font-weight: 500;
+}
+
+
+.time_pair {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.time_resume {
+  font-size: 1.7em;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.time_due {
+  /* display: inline-block;
+  width: 20%; */
+}
+
+.time_now {
+  flex: 1;
+  font-size: 2.1em;
+  color: #D47132;
+  font-weight: 500;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.next_time {
+  /* float: right; */
+  flex: 1;
+  text-align: right;
+  align-self: baseline;
+}
+
+
+h1 {
+  color: #FFF;
+  font-size: 1.7em;
+}
+
+
+h2 {
+  text-transform: uppercase;
+  color: #B4BBCB;
+  font-weight: 500;
+}
+
+/* h3 {
+  color: #343D4E;
+  font-weight: 500;
+}
+*/
+
+h4 {
+  font-size: 1.2em;
+  line-height: 110%;
+}
+
+p {
+}
+
+.change {
+  text-transform: uppercase;
+  font-style: italic;
+  color: #D47132;
+}
