@@ -24,23 +24,19 @@ body {
 
 .nav {
   background-color: #343C4F;
-  padding: 11px 0 0 9px;
+  padding: 6px 0 0 9px;
   font-size: 1.3em;
   color: #fff;
   display: flex;
-  /* align-items: center; */
-  /* columns: 3; */
-  /* height: 55px; */
+  align-items: center;
+  top: 20px;
 }
 
-/* .nav h1 {
-  text-align: center;
-  color: #FFF;
-  font-size: 1.7em;
-}  */
+
 
 img {
   padding-right: 6px;
+  margin-top: 3px;
 }
 
 .go_back {
@@ -48,23 +44,22 @@ img {
   justify-content: flex-end;
   padding-right: 35px;
   color: #8991A2;
+  align-items: center;
 }
-
-.back_title {
-}
-
-.page_on {
-}
-
 
 
 .main_title {
   background-color: #343C4F;
   padding: 40px 16px 16px 16px;
-  /* height: 67px; */
+  top: 50px;
+
 }
 
-
+.ios_essentials, .nav, {
+  position: fixed;
+  width: 375px;
+  z-index: 1;
+}
 
 
 .column_title {
@@ -78,8 +73,7 @@ img {
 }
 
 .column_title_oos {
-  margin-top: 8px;
-  text-transform: uppercase;
+  /* margin-top: 2px; */
   background-color: #B4BBCB;
   padding: 4px 0 0 16px;
   display: flex;
@@ -101,48 +95,47 @@ img {
 
 
 
+/* underlying icons */
 
+.route, .route_oos {
+  background-image: url("/images/blue_icon.png");
+}
 
 .route_now {
-  background-image: url("/images/orange_moving_bus.png");
-
-}
-
-.route {
-  background-image: url("/images/blue_moving_bus.png");
-}
-
-.reroute {
-  background-image: url("/images/reroute_orange_moving_bus.png");
-  /* margin-top: 7px; */
-  padding-top: 11px;
+  background-image: url("/images/orange_icon.png");
 }
 
 .oos {
   background-color: rgba(180, 187, 203, .4);
-  border-top: 1px solid;
 }
 
 
-.route_oos {
-  background-image: url("/images/blue_moving_bus.png");
-}
-
-.route, .route_now, .reroute, .route_oos {
+.route, .route_now, .reroute, .route_oos, .left_info_alert {
   border-bottom: 1px solid rgba(180, 187, 203, 40);
-  height: 56px;  /* was 44 */
+  background-origin: content-box;
   background-repeat: no-repeat;
+  height: 56px;  /* changed from 44 */
   padding-right: 16px;
   display: flex;
-  background-origin: content-box;
-
-  /* justify-content: center; */
 }
+
 
 .route, .route_now, .route_oos {
-  /* margin-top: 11px; */
+  background-size: 63px 32px;
   padding-top: 11px;
 }
+
+
+.reroute {
+  background-image: url("/images/orange_icon_alert.png");
+  background-size: 66px 34px;
+  padding-top: 9px;
+  height: 55px;
+}
+
+
+
+
 
 .route:hover, .route_now:hover, .reroute:hover {
   background-color: #ece5db;
@@ -159,9 +152,8 @@ img {
   flex: 2.5;
 }
 
+
 .line {
-  /* width: 20%;
-  display: inline-block; */
   flex: 0.5;
   font-size: 1.5em;
   font-weight: 500;
@@ -169,13 +161,9 @@ img {
   text-align: right;
   padding-right: 22px;
   padding-top: 7px;
-
-  /* height: 32px; */
 }
 
 .destination {
-  /* display: inline-block;
-  width: 50%; */
   flex: 2;
   font-weight: 500;
 }
@@ -196,22 +184,21 @@ img {
   align-items: center;
 }
 
-.time_due {
-  /* display: inline-block;
-  width: 20%; */
-}
-
 .time_now {
   flex: 1;
   font-size: 2.1em;
-  color: #D47132;
+  color: #8c929f;
   font-weight: 500;
   text-align: right;
   padding-right: 10px;
 }
 
+.reroute .time_now,
+.route_now .time_now {
+  color: #D47132;
+}
+
 .next_time {
-  /* float: right; */
   flex: 1;
   text-align: right;
   align-self: baseline;
@@ -230,11 +217,6 @@ h2 {
   font-weight: 500;
 }
 
-/* h3 {
-  color: #343D4E;
-  font-weight: 500;
-}
-*/
 
 h4 {
   font-size: 1.2em;
@@ -248,4 +230,9 @@ p {
   text-transform: uppercase;
   font-style: italic;
   color: #D47132;
+}
+
+
+section:last-child {
+  border-bottom: 1px dashed rgba(180, 187, 203, .4);
 }
